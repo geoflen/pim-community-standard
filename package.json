@@ -42,5 +42,6 @@
     "vendor/akeneo/pim-community-dev/components/catalogs/front",
     "vendor/akeneo/pim-community-dev/src/Akeneo/Platform/Bundle/ImportExportBundle/front",
     "vendor/akeneo/pim-community-dev/components/identifier-generator/front"
-  ]
+  ],
+  "dependencies": {}
 }

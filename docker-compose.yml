@@ -18,6 +18,7 @@ services:
     working_dir: '/srv/pim'
     command: 'php'
     user: 'www-data'
+      # user: 'prodreg'
     init: true
     networks:
       - 'pim'
@@ -43,7 +44,7 @@ services:
   node:
     image: 'akeneo/node:18'
     environment:
-      YARN_CACHE_FOLDER: '/home/node/.yarn'
+      YARN_CACHE_FOLDER: '/home/node/.yarn:z'
       CYPRESS_CACHE_FOLDER: '/home/node/.cypress'
     volumes:
       - './:/srv/pim'
